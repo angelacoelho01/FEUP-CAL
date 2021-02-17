@@ -2,40 +2,46 @@
 
 bool changeMakingBF(unsigned int C[], unsigned int Stock[], unsigned int n, unsigned int T, unsigned int usedCoins[]) {
     unsigned minNumberCoins = INT_MAX;
+    bool possibleChange = false;
 
-    if (n == 4) {
-        for (unsigned i = 0; i <= Stock[0]; i++) {
-            for (unsigned j = 0; j <= Stock[1]; j++) {
-                for (unsigned k = 0; k <= Stock[2]; k++) {
-                    for (unsigned l = 0; l <= Stock[3]; l++) {
-                        if (((C[0] * i + C[1] * j + C[2] * k + C[3] * l) == T) && (i + j + k + l < minNumberCoins)) {
-                            usedCoins[0] = i;
-                            usedCoins[1] = j;
-                            usedCoins[2] = k;
-                            usedCoins[3] = l;
-                            return true;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    else if(n == 3){
-        for (unsigned i = 0; i <= Stock[0]; i++) {
-            for (unsigned j = 0; j <= Stock[1]; j++) {
-                for (unsigned k = 0; k <= Stock[2]; k++) {
-                    if (((C[0] * i + C[1] * j + C[2] * k) == T) && (i + j + k < minNumberCoins)) {
-                        usedCoins[0] = i;
-                        usedCoins[1] = j;
-                        usedCoins[2] = k;
-                        return true;
-                    }
-                }
-            }
-        }
+    unsigned* countCoin = new unsigned[n];
+    unsigned nCombinations = 1;
+    for(unsigned i = 0; i < n; i++){
+        usedCoins[i] = 0;
+        countCoin[i] = 0;
+        nCombinations *= (Stock[i] + 1);
     }
 
-    return false;
+    bool  next;
+
+    for(unsigned i = 0; i < nCombinations - 1; i++){
+        next = false;
+
+        for(int j = (int) n - 1; j >= 0; j--){
+            if(((countCoin[j] >= Stock[j]) && (j == n-1)) || (countCoin[j] > Stock[j])) {
+                countCoin[j] = 0;
+                countCoin[j - 1]++;
+                next = true;
+            }
+        }
+
+        if (!next) countCoin[n-1]++;
+
+        unsigned amount = 0, nCoins = 0;
+        for(unsigned j = 0; j < n; j++){
+            nCoins += countCoin[j];
+            amount += C[j]*countCoin[j];
+        }
+
+        if(amount == T && nCoins < minNumberCoins){
+            for(unsigned j = 0; j < n; j++)
+                usedCoins[j] = countCoin[j];
+            minNumberCoins = nCoins;
+            possibleChange = true;
+        }
+
+    }
+    return possibleChange;
 }
 
 

@@ -1,20 +1,26 @@
 #include "exercises.h"
+#include <algorithm>
 
 bool isCanonical(unsigned int C[], unsigned int n) {
     unsigned a = C[2] + 1;
     unsigned b = C[n-2] + C[n-1];
-    unsigned int* usedCoins1 = new unsigned int[n];
-    unsigned int* usedCoins2 = new unsigned int[n];
+    unsigned int* usedCoinsBF = new unsigned int[n];
+    unsigned int* usedCoinsGreedy = new unsigned int[n];
     unsigned int* stock = new unsigned int[n];
 
     for(unsigned i = 0; i < n; i++)
-        stock[i] = 1;
+        stock[i] = n;
 
     for(unsigned i = a + 1; i < b; i++) {
-        changeMakingBF(C, stock, n, i, usedCoins1);
-        changeMakingGreedy(C, stock, n, i, usedCoins2);
-        if(std::memcmp(usedCoins1, usedCoins2, sizeof(*usedCoins1)) != 0)
-            return false;
+        changeMakingBF(C, stock, n, i, usedCoinsBF);
+        changeMakingGreedy(C, stock, n, i, usedCoinsGreedy);
+
+        std::sort(usedCoinsBF, usedCoinsBF + n);
+        std::sort(usedCoinsGreedy, usedCoinsGreedy + n);
+
+        for(int j = 0; j < n; j++){
+            if(usedCoinsBF[j] != usedCoinsGreedy[j]) return false;
+        }
     }
     return true;
 }
