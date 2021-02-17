@@ -6,4 +6,4 @@ set(GOOGLETEST_PATH lib/googletest-master)
 add_subdirectory(${GOOGLETEST_PATH})
 
 # Build each TP class
-add_subdirectory(TP1)
+add_subdirectory(src)
