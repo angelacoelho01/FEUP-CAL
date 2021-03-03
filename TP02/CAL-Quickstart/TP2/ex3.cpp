@@ -2,23 +2,59 @@
 #include <algorithm>
 #include <iostream>
 
+void printResult(bool result, unsigned int usedCoins[], unsigned int n){
+    std::cout << "result = " << result << ", change = [ ";
+    for(unsigned int i = 0; i < n; i++)
+        std::cout << usedCoins[i] << " ";
+    std::cout << "]" << std::endl << std::endl;
+}
 
-bool changeMakingBacktracking(unsigned int C[], unsigned int Stock[], unsigned int n, unsigned int T, unsigned int usedCoins[]) {
-    if(T==0) return true;
+bool changeMaking(unsigned  int Coins[], unsigned int numCoins, unsigned int T, unsigned  int usedCoins[], unsigned int i){
+    if(T == 0) return true;
 
     if(T < 0) return false;
 
-    if(n <= 0 && T >= 1) return false;
+    if(i == numCoins) return false;
 
-    for(int i = 0; i < n; i++){
-        int coin  = C[i];
-        if(T >= coin){
-            usedCoins[i]++;
-            changeMakingBacktracking(C, Stock, i, T-coin, usedCoins);
-        }
+    if (Coins[i] <= T) {
+        usedCoins[i]++;
+        if (changeMaking(Coins, numCoins, T - Coins[i], usedCoins, i + 1)) return true;
+
+        usedCoins[i]--;
+        if (changeMaking(Coins, numCoins, T, usedCoins, i + 1)) return true;
     }
 
     return false;
+}
+
+bool changeMakingBacktracking(unsigned int C[], unsigned int Stock[], unsigned int n, unsigned int T, unsigned int usedCoins[]) {
+    unsigned int numCoins = 0;
+    for(int j = 0; j < n; j++) {
+        usedCoins[j] = 0;
+        numCoins += Stock[j];
+    }
+
+    unsigned int Coins[numCoins], usedCoins1[numCoins];
+    unsigned count = 0;
+
+    for(unsigned int j = 0; j < n; j++){
+        for(unsigned int k = 0; k < Stock[j]; k++) {
+            Coins[count] = C[j];
+            usedCoins1[count++] = 0;
+        }
+    }
+    bool result = changeMaking(Coins, numCoins, T, usedCoins1, 0);
+
+    count = 0;
+    for(unsigned int j = 0; j < n; j++){
+        for(unsigned int k = 0; k < Stock[j]; k++) {
+            usedCoins[j] += usedCoins1[count++];
+        }
+    }
+
+    printResult(result, usedCoins, n);
+
+    return result;
 }
 
 /// TESTS ///
