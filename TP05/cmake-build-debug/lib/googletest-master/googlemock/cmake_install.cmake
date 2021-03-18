@@ -1,8 +1,8 @@
-# Install script for directory: /home/angela/Desktop/MIEIC/2y-2s/cal/tp05/lib/googletest-master/googlemock
+# Install script for directory: C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP05/lib/googletest-master/googlemock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CAL-TP_classes")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,39 +27,42 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/angela/Desktop/MIEIC/2y-2s/cal/tp05/lib/googletest-master/googlemock/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP05/lib/googletest-master/googlemock/include/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/angela/Desktop/MIEIC/2y-2s/cal/tp05/cmake-build-debug/lib/libgmockd.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP05/cmake-build-debug/lib/gmockd.lib")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/angela/Desktop/MIEIC/2y-2s/cal/tp05/cmake-build-debug/lib/libgmock_maind.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP05/cmake-build-debug/lib/gmock_maind.lib")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/angela/Desktop/MIEIC/2y-2s/cal/tp05/cmake-build-debug/lib/googletest-master/googletest/generated/gmock.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP05/cmake-build-debug/bin/${CMAKE_INSTALL_CONFIG_NAME}/gmockd.pdb")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/angela/Desktop/MIEIC/2y-2s/cal/tp05/cmake-build-debug/lib/googletest-master/googletest/generated/gmock_main.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP05/cmake-build-debug/bin/${CMAKE_INSTALL_CONFIG_NAME}/gmock_maind.pdb")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP05/cmake-build-debug/lib/googletest-master/googletest/generated/gmock.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP05/cmake-build-debug/lib/googletest-master/googletest/generated/gmock_main.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/angela/Desktop/MIEIC/2y-2s/cal/tp05/cmake-build-debug/lib/googletest-master/googletest/cmake_install.cmake")
+  include("C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP05/cmake-build-debug/lib/googletest-master/googletest/cmake_install.cmake")
 
 endif()
 

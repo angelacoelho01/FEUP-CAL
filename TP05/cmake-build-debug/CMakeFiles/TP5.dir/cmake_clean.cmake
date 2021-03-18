@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TP5.dir/TP5/Person.cpp.o"
-  "CMakeFiles/TP5.dir/TP5/ex1.cpp.o"
-  "CMakeFiles/TP5.dir/TP5/ex2.cpp.o"
-  "CMakeFiles/TP5.dir/TP5/ex3.cpp.o"
-  "CMakeFiles/TP5.dir/main.cpp.o"
-  "TP5"
+  "CMakeFiles/TP5.dir/TP5/Person.cpp.obj"
+  "CMakeFiles/TP5.dir/TP5/ex1.cpp.obj"
+  "CMakeFiles/TP5.dir/TP5/ex2.cpp.obj"
+  "CMakeFiles/TP5.dir/TP5/ex3.cpp.obj"
+  "CMakeFiles/TP5.dir/main.cpp.obj"
+  "TP5.exe"
+  "TP5.exe.manifest"
+  "TP5.lib"
   "TP5.pdb"
 )
 

@@ -109,8 +109,6 @@ bool Graph<T>::addEdge(const T &sourc, const T &dest, double w) {
     Vertex<T>* src = findVertex(sourc), *dst = findVertex(dest);
     if(src == NULL || dst == NULL) return false;
     src->addEdge(dst, w);
-    vertexSet.push_back(src);
-    vertexSet.push_back(dst);
     return true;
 }
 
@@ -134,10 +132,8 @@ void Vertex<T>::addEdge(Vertex<T> *d, double w) {
 template <class T>
 bool Graph<T>::removeEdge(const T &sourc, const T &dest) {
     Vertex<T>* src = findVertex(sourc), *dst = findVertex(dest);
-    if(!src->removeEdgeTo(dst)) return false;
-    removeVertex(sourc);
-    removeVertex(dest);
-    return true;
+    if(src == NULL || dst == NULL) return false;
+    return src->removeEdgeTo(dst);
 }
 
 /*
@@ -175,7 +171,7 @@ bool Graph<T>::removeVertex(const T &in) {
         }
     }
     if(vertex == NULL) return false;
-    for(const auto& v : vertexSet)
+    for(Vertex<T>* v : vertexSet)
         v->removeEdgeTo(vertex);
     return true;
 }
@@ -191,13 +187,11 @@ bool Graph<T>::removeVertex(const T &in) {
 template <class T>
 std::vector<T> Graph<T>::dfs() const {
     std::vector<T> res;
-    for(auto v : vertexSet)
+    for(Vertex<T>* v : vertexSet)
         v->visited = false;
-    for(auto v : vertexSet) {
+    for(Vertex<T>* v : vertexSet) {
         if(!v->visited) dfsVisit(v, res);
     }
-    for(unsigned i = 0; i < res.size(); i++)
-        std::cout << "res[i] = " << res[i] << std::endl;
     return res;
 }
 
@@ -209,7 +203,7 @@ template <class T>
 void Graph<T>::dfsVisit(Vertex<T> *v, std::vector<T> & res) const {
     v->visited = true;
     res.push_back(v->info);
-    for(auto e : v->adj){
+    for(Edge<T> e : v->adj){
         if(!e.dest->visited) dfsVisit(e.dest, res);
     }
 }
@@ -224,10 +218,27 @@ void Graph<T>::dfsVisit(Vertex<T> *v, std::vector<T> & res) const {
  */
 template <class T>
 std::vector<T> Graph<T>::bfs(const T & source) const {
-    // TODO (22 lines)
-    // HINT: Use the flag "visited" to mark newly discovered vertices .
-    // HINT: Use the "queue<>" class to temporarily store the vertices.
     std::vector<T> res;
+    for(Vertex<T>* v : vertexSet)
+        v->visited = false;
+
+    Vertex<T>* vertex = findVertex(source);
+    if(vertex == NULL) return res;
+    vertex->visited = true;
+
+    std::queue<Vertex<T>*> aux;
+    aux.push(vertex);
+    while(!aux.empty()) {
+        Vertex<T>* v = aux.front();
+        res.push_back(v->info);
+        aux.pop();
+        for(Edge<T> e : v->adj) {
+            if(!e.dest->visited) {
+                aux.push(e.dest);
+                e.dest->visited = true;
+            }
+        }
+    }
     return res;
 }
 
@@ -242,8 +253,27 @@ std::vector<T> Graph<T>::bfs(const T & source) const {
 
 template<class T>
 std::vector<T> Graph<T>::topsort() const {
-    // TODO (26 lines)
     std::vector<T> res;
+    for(Vertex<T>* v : vertexSet)
+        v->indegree = 0;
+    for(Vertex<T>* v : vertexSet) {
+        for(Edge<T> e : v->adj)
+            e.dest->indegree++;
+    }
+    std::queue<Vertex<T>*> C;
+    for(Vertex<T>* v : vertexSet) {
+        if(v->indegree == 0) C.push(v);
+    }
+    while(!C.empty()) {
+        Vertex<T>* v = C.front();
+        res.push_back(v->info);
+        C.pop();
+        for(Edge<T> e : v->adj) {
+            e.dest->indegree--;
+            if (e.dest->indegree == 0) C.push(e.dest);
+        }
+    }
+    if(res.size() != vertexSet.size()) res.clear();
     return res;
 }
 
@@ -259,8 +289,33 @@ std::vector<T> Graph<T>::topsort() const {
 
 template <class T>
 int Graph<T>::maxNewChildren(const T & source, T &inf) const {
-    // TODO (28 lines, mostly reused)
-    return 0;
+    int maxNumChildren = -1;
+    for(Vertex<T>* v : vertexSet)
+        v->visited = false;
+
+    Vertex<T>* vertex = findVertex(source);
+    if(vertex == NULL) return maxNumChildren;
+    vertex->visited = true;
+
+    std::queue<Vertex<T>*> aux;
+    aux.push(vertex);
+    while(!aux.empty()) {
+        Vertex<T>* v = aux.front();
+        aux.pop();
+        int counter = 0;
+        for(Edge<T> e : v->adj) {
+            if(!e.dest->visited) {
+                counter++;
+                aux.push(e.dest);
+                e.dest->visited = true;
+            }
+        }
+        if(counter > maxNumChildren) {
+            maxNumChildren = counter;
+            inf = v->info;
+        }
+    }
+    return maxNumChildren;
 }
 
 /****************** 3b) isDAG   (HOME WORK)  ********************/
@@ -275,8 +330,16 @@ int Graph<T>::maxNewChildren(const T & source, T &inf) const {
 
 template <class T>
 bool Graph<T>::isDAG() const {
-    // TODO (9 lines, mostly reused)
-    // HINT: use the auxiliary field "processing" to mark the vertices in the stack.
+    std::vector<T> res;
+    for(Vertex<T>* v : vertexSet) {
+        v->visited = false;
+        v->processing = false;
+    }
+    for(Vertex<T>* v : vertexSet) {
+        if(!v->visited) {
+            if(!dfsIsDAG(v)) return false;
+        }
+    }
     return true;
 }
 
@@ -286,7 +349,13 @@ bool Graph<T>::isDAG() const {
  */
 template <class T>
 bool Graph<T>::dfsIsDAG(Vertex<T> *v) const {
-    // TODO (12 lines, mostly reused)
+    v->processing = true;
+    v->visited = true;
+    for(Edge<T> e : v->adj) {
+        if (!e.dest->visited) dfsIsDAG(e.dest);
+        if(e.dest->visited && e.dest->processing) return false;
+    }
+    v->processing = false;
     return true;
 }
 
