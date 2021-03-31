@@ -1,0 +1,8 @@
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Users\angel\Desktop\MIEIC\2nd_year\2nd_semester\CAL\FEUP-CAL\TP07
+-- Found Python: C:/Python39/python.exe (found version "3.9.1") found components: Interpreter 
+-- Looking for pthread.h
+-- Looking for pthread.h - not found
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/cmake-build-debug
