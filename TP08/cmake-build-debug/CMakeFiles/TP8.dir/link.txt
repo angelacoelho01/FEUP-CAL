@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/TP8.dir/main.cpp.o CMakeFiles/TP8.dir/TP8/TestAux.cpp.o CMakeFiles/TP8.dir/TP8/ex1.cpp.o -o TP8  lib/libgtest_maind.a lib/libgmock_maind.a lib/libgmockd.a lib/libgtestd.a -lpthread 
