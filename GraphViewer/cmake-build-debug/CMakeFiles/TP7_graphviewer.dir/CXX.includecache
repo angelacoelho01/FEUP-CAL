@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/GraphViewerCpp/include/fpsmonitor.h
+chrono
+-
+queue
+-
+
+../lib/GraphViewerCpp/include/graphviewer.h
+string
+-
+thread
+-
+mutex
+-
+unordered_map
+-
+set
+-
+fpsmonitor.h
+../lib/GraphViewerCpp/include/fpsmonitor.h
+SFML/Graphics.hpp
+-
+lines.h
+../lib/GraphViewerCpp/include/lines.h
+
+../lib/GraphViewerCpp/include/lines.h
+
+/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/TP7_graphviewer/ex4.cpp
+fstream
+-
+graphviewer.h
+/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/TP7_graphviewer/graphviewer.h
+iostream
+-
+

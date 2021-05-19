@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CAL-TP_classes"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\GraphViewerCpp\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP7_graphviewer">
+				<Option output="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/TP7_graphviewer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP7_graphviewer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP7_graphviewer/fast">
+				<Option output="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/TP7_graphviewer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP7_graphviewer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graphviewer">
+				<Option output="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/lib/libgraphviewer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/SFML/include"/>
+					<Add directory="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp/Makefile&quot;  VERBOSE=1 graphviewer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graphviewer/fast">
+				<Option output="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/lib/libgraphviewer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/SFML/include"/>
+					<Add directory="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp/Makefile&quot;  VERBOSE=1 graphviewer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/cmake-build-debug/lib/GraphViewerCpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/TP7_graphviewer/ex1.cpp">
+			<Option target="TP7_graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/TP7_graphviewer/ex2.cpp">
+			<Option target="TP7_graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/TP7_graphviewer/ex3.cpp">
+			<Option target="TP7_graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/TP7_graphviewer/ex4.cpp">
+			<Option target="TP7_graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/TP7_graphviewer/main.cpp">
+			<Option target="TP7_graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/src/edge.cpp">
+			<Option target="graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/src/fpsmonitor.cpp">
+			<Option target="graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/src/graphviewer.cpp">
+			<Option target="graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/src/lines.cpp">
+			<Option target="graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/src/node.cpp">
+			<Option target="graphviewer"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/GraphViewer/lib/GraphViewerCpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\GraphViewerCpp\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

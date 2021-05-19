@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /var/lib/snapd/snap/clion/149/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/151/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /var/lib/snapd/snap/clion/149/bin/cmake/linux/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/151/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/angela/Desktop/MIEIC/FEUP-CAL/TP08
+CMAKE_SOURCE_DIR = /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/cmake-build-debug
+CMAKE_BINARY_DIR = /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TP8.dir/depend.make
@@ -78,42 +78,42 @@ include CMakeFiles/TP8.dir/flags.make
 
 CMakeFiles/TP8.dir/main.cpp.o: CMakeFiles/TP8.dir/flags.make
 CMakeFiles/TP8.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/angela/Desktop/MIEIC/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TP8.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP8.dir/main.cpp.o -c /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TP8.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP8.dir/main.cpp.o -c /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/main.cpp
 
 CMakeFiles/TP8.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP8.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/main.cpp > CMakeFiles/TP8.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/main.cpp > CMakeFiles/TP8.dir/main.cpp.i
 
 CMakeFiles/TP8.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP8.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/main.cpp -o CMakeFiles/TP8.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/main.cpp -o CMakeFiles/TP8.dir/main.cpp.s
 
 CMakeFiles/TP8.dir/TP8/TestAux.cpp.o: CMakeFiles/TP8.dir/flags.make
 CMakeFiles/TP8.dir/TP8/TestAux.cpp.o: ../TP8/TestAux.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/angela/Desktop/MIEIC/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TP8.dir/TP8/TestAux.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP8.dir/TP8/TestAux.cpp.o -c /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/TP8/TestAux.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TP8.dir/TP8/TestAux.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP8.dir/TP8/TestAux.cpp.o -c /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/TP8/TestAux.cpp
 
 CMakeFiles/TP8.dir/TP8/TestAux.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP8.dir/TP8/TestAux.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/TP8/TestAux.cpp > CMakeFiles/TP8.dir/TP8/TestAux.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/TP8/TestAux.cpp > CMakeFiles/TP8.dir/TP8/TestAux.cpp.i
 
 CMakeFiles/TP8.dir/TP8/TestAux.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP8.dir/TP8/TestAux.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/TP8/TestAux.cpp -o CMakeFiles/TP8.dir/TP8/TestAux.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/TP8/TestAux.cpp -o CMakeFiles/TP8.dir/TP8/TestAux.cpp.s
 
 CMakeFiles/TP8.dir/TP8/ex1.cpp.o: CMakeFiles/TP8.dir/flags.make
 CMakeFiles/TP8.dir/TP8/ex1.cpp.o: ../TP8/ex1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/angela/Desktop/MIEIC/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TP8.dir/TP8/ex1.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP8.dir/TP8/ex1.cpp.o -c /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/TP8/ex1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TP8.dir/TP8/ex1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP8.dir/TP8/ex1.cpp.o -c /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/TP8/ex1.cpp
 
 CMakeFiles/TP8.dir/TP8/ex1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP8.dir/TP8/ex1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/TP8/ex1.cpp > CMakeFiles/TP8.dir/TP8/ex1.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/TP8/ex1.cpp > CMakeFiles/TP8.dir/TP8/ex1.cpp.i
 
 CMakeFiles/TP8.dir/TP8/ex1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP8.dir/TP8/ex1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/TP8/ex1.cpp -o CMakeFiles/TP8.dir/TP8/ex1.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/TP8/ex1.cpp -o CMakeFiles/TP8.dir/TP8/ex1.cpp.s
 
 # Object files for target TP8
 TP8_OBJECTS = \
@@ -133,7 +133,7 @@ TP8: lib/libgmock_maind.a
 TP8: lib/libgmockd.a
 TP8: lib/libgtestd.a
 TP8: CMakeFiles/TP8.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/angela/Desktop/MIEIC/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TP8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TP8"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP8.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,6 +146,6 @@ CMakeFiles/TP8.dir/clean:
 .PHONY : CMakeFiles/TP8.dir/clean
 
 CMakeFiles/TP8.dir/depend:
-	cd /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/angela/Desktop/MIEIC/FEUP-CAL/TP08 /home/angela/Desktop/MIEIC/FEUP-CAL/TP08 /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/cmake-build-debug /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/cmake-build-debug /home/angela/Desktop/MIEIC/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles/TP8.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08 /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08 /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/cmake-build-debug /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/cmake-build-debug /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP08/cmake-build-debug/CMakeFiles/TP8.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TP8.dir/depend
 

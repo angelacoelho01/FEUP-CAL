@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/lib/googletest-master/googletest/src/gtest_main.cc" "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+  "/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/lib/googletest-master/googletest/src/gtest_main.cc" "/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -16,7 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

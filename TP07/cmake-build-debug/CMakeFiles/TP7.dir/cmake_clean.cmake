@@ -1,11 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TP7.dir/TP7/TestAux.cpp.obj"
-  "CMakeFiles/TP7.dir/TP7/ex1.cpp.obj"
-  "CMakeFiles/TP7.dir/TP7/ex2.cpp.obj"
-  "CMakeFiles/TP7.dir/main.cpp.obj"
-  "TP7.exe"
-  "TP7.exe.manifest"
-  "TP7.lib"
+  "CMakeFiles/TP7.dir/TP7/TestAux.cpp.o"
+  "CMakeFiles/TP7.dir/TP7/ex1.cpp.o"
+  "CMakeFiles/TP7.dir/TP7/ex2.cpp.o"
+  "CMakeFiles/TP7.dir/main.cpp.o"
+  "TP7"
   "TP7.pdb"
 )
 

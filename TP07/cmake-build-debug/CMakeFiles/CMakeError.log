@@ -1,15 +1,60 @@
-Determining if the include file pthread.h exists failed with the following output:
-Change Dir: C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/cmake-build-debug/CMakeFiles/CMakeTmp
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/angela/Desktop/MIEIC/FEUP-CAL/TP07/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_c25a3\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_c25a3.dir\build.make /nologo -L                  CMakeFiles\cmTC_c25a3.dir\build
-Building C object CMakeFiles/cmTC_c25a3.dir/CheckIncludeFile.c.obj
-	C:\PROGRA~2\MICROS~2\2017\BUILDT~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @C:\Users\angel\AppData\Local\Temp\nm206B.tmp
-CheckIncludeFile.c
-C:\Users\angel\Desktop\MIEIC\2nd_year\2nd_semester\CAL\FEUP-CAL\TP07\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
-NMAKE : fatal error U1077: 'C:\PROGRA~2\MICROS~2\2017\BUILDT~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe' : return code '0x2'
-Stop.
-NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe"' : return code '0x2'
-Stop.
+Run Build Command(s):/usr/bin/make cmTC_2daaa/fast && /usr/bin/make  -f CMakeFiles/cmTC_2daaa.dir/build.make CMakeFiles/cmTC_2daaa.dir/build
+make[1]: Entering directory '/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2daaa.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2daaa.dir/src.c.o -c /home/angela/Desktop/MIEIC/FEUP-CAL/TP07/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2daaa
+/var/lib/snapd/snap/clion/149/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2daaa.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2daaa.dir/src.c.o -o cmTC_2daaa 
+/usr/bin/ld: CMakeFiles/cmTC_2daaa.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2daaa.dir/build.make:106: cmTC_2daaa] Error 1
+make[1]: Leaving directory '/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_2daaa/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/angela/Desktop/MIEIC/FEUP-CAL/TP07/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_aed11/fast && /usr/bin/make  -f CMakeFiles/cmTC_aed11.dir/build.make CMakeFiles/cmTC_aed11.dir/build
+make[1]: Entering directory '/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aed11.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_aed11.dir/CheckFunctionExists.c.o -c /var/lib/snapd/snap/clion/149/bin/cmake/linux/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aed11
+/var/lib/snapd/snap/clion/149/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aed11.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_aed11.dir/CheckFunctionExists.c.o -o cmTC_aed11  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_aed11.dir/build.make:106: cmTC_aed11] Error 1
+make[1]: Leaving directory '/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_aed11/fast] Error 2
 
 
 

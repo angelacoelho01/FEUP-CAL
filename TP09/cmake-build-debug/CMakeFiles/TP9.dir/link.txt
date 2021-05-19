@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/TP9.dir/main.cpp.o CMakeFiles/TP9.dir/TP9/ex1.cpp.o -o TP9  lib/libgtest_maind.a lib/libgmock_maind.a lib/libgmockd.a lib/libgtestd.a -lpthread 

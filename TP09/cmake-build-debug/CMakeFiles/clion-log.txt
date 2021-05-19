@@ -1,0 +1,4 @@
+/var/lib/snapd/snap/clion/151/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP09
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/angela/Desktop/MIEIC/CAL/FEUP-CAL/TP09/cmake-build-debug

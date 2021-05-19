@@ -330,7 +330,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/Graph.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/Graph.h
 vector
 -
 queue
@@ -344,19 +344,19 @@ unordered_set
 iostream
 -
 MutablePriorityQueue.h
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/MutablePriorityQueue.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/MutablePriorityQueue.h
 
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/MutablePriorityQueue.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/MutablePriorityQueue.h
 vector
 -
 
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/TestAux.cpp
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/TestAux.cpp
 Graph.h
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/Graph.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/Graph.h
 TestAux.h
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/TestAux.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/TestAux.h
 
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/TestAux.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/TestAux.h
 gtest/gtest.h
 -
 sstream
@@ -368,17 +368,23 @@ time.h
 chrono
 -
 Graph.h
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/Graph.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/Graph.h
 
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/ex1.cpp
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/ex1.cpp
 Graph.h
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/Graph.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/Graph.h
 TestAux.h
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/TestAux.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/TestAux.h
 
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/ex2.cpp
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/ex2.cpp
 Graph.h
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/Graph.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/Graph.h
 TestAux.h
-C:/Users/angel/Desktop/MIEIC/2nd_year/2nd_semester/CAL/FEUP-CAL/TP07/TP7/TestAux.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/TP7/TestAux.h
+
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/main.cpp
+iostream
+-
+gtest/gtest.h
+/home/angela/Desktop/MIEIC/FEUP-CAL/TP07/gtest/gtest.h
 
